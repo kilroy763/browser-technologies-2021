@@ -1,6 +1,7 @@
 // Require third-party modules
 const express = require('express');
 var path = require('path')
+const bodyParser = require('body-parser');
 
 
 // Config object
@@ -19,20 +20,26 @@ app.set('views', 'views');
 // If the url matches a file it will send that file
 // Sending something (responding) ends the response cycle
 app.use(express.static(path.join(__dirname, '/public')));
-
+app.use(bodyParser.urlencoded({ extended: true }));
 
 app.get('/', function(req, res) {
-	// Send a plain string using res.send();
+    // Send a plain string using res.send();
 	res.render('home', {
 		pageTitle: `Node.js, Express & PWA`,
-		tagline: 'Basic implementation'
+        tagline: 'Basic implementation'
 	})
 });
 
 app.get('/overview', function(req, res) {
-    res.render('overview', {
+    console.log(req.body) //you will get your data in this as object.
 
+    res.render('overview', {
+        pageTitle: `Node.js, Express & PWA`,
+        tagline: 'Basic implementation',
+        name: req.body.name
+        
     })
+ 
 });
 
 // Actually set up the server
