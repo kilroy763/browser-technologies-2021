@@ -17,4 +17,14 @@ De uitwerking hiervan is [hier](https://github.com/kilroy763/browser-technologie
 ## De eindopdracht ✨ Progressive Enhanced Browser Technologie
 Voor de eindopdracht heb ik gekozen om een enquete over de minor Web Development te maken. Hiervoor heb ik eerst wat schetsen gemaakt zodat ik een idee had voor wat ik ging bouwen, ook heb ik de functional/reliable, usable en pleasurable laag bepaald.
 
+### index pagina
+Hier komt de gebruiker op binnen, hier krijgt de student een formulier te zien waar hij/zij zijn studentnummer en naam moet invoeren.
+![Schets 1](https://github.com/kilroy763/browser-technologies-2021/blob/master/docs/img/schets1.jpg?raw=true)
 
+### Overzichtspagina 
+Hier ziet de student alle vakken van de minor, de student moet alle vakken langs om de enquete in te vullen. Tot slot kan hij op de submit knop drukken.
+![Schets 2](https://github.com/kilroy763/browser-technologies-2021/blob/master/docs/img/schets2.jpg?raw=true)
+
+### Detailpagina
+Hier is de daadwerkelijke enquete te zien die de student moet invullen.
+![Schets 3](https://github.com/kilroy763/browser-technologies-2021/blob/master/docs/img/schets3.jpg?raw=true)
