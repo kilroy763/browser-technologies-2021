@@ -14,6 +14,7 @@ Muis/trackpad werkt niet Dit ga ik testen op de Formule 1 website. Ik wil hierdo
 De uitwerking hiervan is [hier](https://github.com/kilroy763/browser-technologies-2021/wiki/Opdracht-2-%F0%9F%92%94-Breek-het-Web)
  te zien
 
-
+## De eindopdracht ✨ Progressive Enhanced Browser Technologie
+Voor de eindopdracht heb ik gekozen om een enquete over de minor Web Development te maken. Hiervoor heb ik eerst wat schetsen gemaakt zodat ik een idee had voor wat ik ging bouwen, ook heb ik de functional/reliable, usable en pleasurable laag bepaald.
 
 
