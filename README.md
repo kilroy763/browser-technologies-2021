@@ -11,7 +11,7 @@ Op de donderdag ben ik aan de slag gegaan met het breken van het web. Ik heb 2 f
 
 Het javascript volledig uitzetten
 Muis/trackpad werkt niet Dit ga ik testen op de Formule 1 website. Ik wil hierdoor kijken of een groot bedrijf zoals Liberty Media (Formule 1) hun website wel goed in elkaar heeft zitten voor verschillende user cases. Dit is wel mijn verwachting in ieder geval.
-De uitwerking hiervan is [hier](https://github.com/kilroy763/browser-technologies-2021/wiki/Week-1)
+De uitwerking hiervan is [hier](https://github.com/kilroy763/browser-technologies-2021/wiki/Opdracht-2-%F0%9F%92%94-Breek-het-Web)
  te zien
 
 
