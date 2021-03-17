@@ -1,0 +1,23 @@
+* {
+    font-family: 'Oswald', sans-serif;
+}
+
+body {
+    background-image: url(https://wallpapercave.com/wp/wp2445777.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    background-color: white;
+}
+
+h1, h2{
+    text-align: center;
+}
+
+form {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    width: 50%;
+}
