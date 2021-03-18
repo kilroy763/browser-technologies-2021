@@ -34,17 +34,19 @@ Hier is de daadwerkelijke enquete te zien die de student moet invullen.
 ![Schets 3](https://github.com/kilroy763/browser-technologies-2021/blob/master/docs/img/schets3.jpg?raw=true)
 
 ### Use case, Enquete over de minor Web Development
-Ik wil een enquête kunnen invullen over de minor Web Development, met verschillende antwoordmogelijkheden. Als ik de enquête niet afkrijg, wil ik later weer verder gaan met waar ik ben gebleven.
+> Ik wil een enquête kunnen invullen over de minor Web Development, met verschillende antwoordmogelijkheden. Als ik de enquête niet afkrijg, wil ik later weer verder gaan met waar ik ben gebleven.
 
- Studentgegevens (naam + nummer) verplicht
- Validatie: alles moet zijn ingevuld voordat je verder mag met het formulier. Geef duidelijke foutmeldingen.
- Als ik de enquete niet afkrijg, wil ik later weer verder gaan met waar ik ben gebleven.
- 
-Per vak:
-* Naam
-* Docenten
-* Weken waarin je het vak deed
-* Beoordeling 1-10
-* Lesstof (hoe moeilijk is het)
-* Uitleg (duidelijkheid uitleg)
-* Eigen inzicht (snap je alles)
+#### Vereisten voor de Enquete
+
+- Studentgegevens (naam + nummer) verplicht
+- Per vak 
+	- naam
+	- docent(en)
+	- weken waarin je het vak deed
+	- beoordeling op schaal 1-10 van
+	- lesstof (hoe moeilijk is het)
+	- uitleg (hoe duidelijk is het uitgelegd)
+	- eigen inzicht (hoe goed snap je het)
+	
+- Validatie: alles moet zijn ingevuld voordat je verder mag met het formulier. Geef duidelijke foutmeldingen.
+- Als ik de enquete niet afkrijg, wil ik later weer verder gaan met waar ik ben gebleven.
