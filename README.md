@@ -50,3 +50,6 @@ Hier is de daadwerkelijke enquete te zien die de student moet invullen.
 	
 - Validatie: alles moet zijn ingevuld voordat je verder mag met het formulier. Geef duidelijke foutmeldingen.
 - Als ik de enquete niet afkrijg, wil ik later weer verder gaan met waar ik ben gebleven.
+
+#### Dag 1 (Woensdag 17-03)
+De eerste dag heb ik in de ochtend wat schetsen gemaakt. Hierdoor had ik direct een idee met wat ik ging maken. Hierna heb ik een NodeJS / Express omgeving opgezet, basis HTML toegevoegd en gekeken naar de forms. Ik wilde namenlijk met de formulieren het zo maken dat de data wordt opgeslagen in een JSON bestand. Dit was alleen nog niet gelukt
