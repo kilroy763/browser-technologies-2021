@@ -1,13 +1,13 @@
 <%- include('./partials/head.ejs') %>
 
-
+<section class="header">
 <h1>Enquete</h1>
 <h2>Minor Web Development</h2>
 <h3><%- name %></h3>
+</section>
 
+<h2>Nog te maken:</h2>
 <section class="enquete">
-    <h2>Nog te maken:</h2>
-
     <% make.forEach(enq => { %>
 <a href="enq/<%= enq %>">
 <section>
@@ -15,9 +15,10 @@
 </section>
 </a>
 <% }); %>
-
+</section>
 
 <h2>Al afgerond:</h2>
+<section class="enquete">
 <% done.forEach(enq => { %>
     <a href="enq/<%= enq %>">
     <section>
@@ -25,10 +26,12 @@
     </section>
     </a>
     <% }); %>
-    
+</section>
 
    
 
 
 
-<button>Doorvoeren</button>
+<input type="Submit" value="Submit" class="overviewbutton">
+
+<%- include('./partials/footer.ejs') %>

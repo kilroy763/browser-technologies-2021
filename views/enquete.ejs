@@ -1,18 +1,19 @@
 <%- include('./partials/head.ejs') %>
 
+<section class="enqueteSectie">
 <h1>Enquete</h1>
 <h2>Het vak</h2>
 
 <h3>Tijdlijn</h3>
-<a href="/overview"><i class="fas fa-backspace"></i></a>
+
 
 
 <form action="/overview">
 
     <p>Van welke docent kreeg je les</p>
-    <input type="radio" name="docent" id="DocentA" value="DocentA">
+    <input type="radio" name="docent" id="DocentA">
     <label for="docentA">Joost</label>
-    <input type="radio" name="docent" id="DocentB" value="DocentB">
+    <input type="radio" name="docent" id="DocentB">
     <label for="DocentB">Suus</label>
 
 
@@ -68,4 +69,6 @@
 
     <input type="submit" value="Submit">
 </form>
+</section>
 
+<%- include('./partials/footer.ejs') %>

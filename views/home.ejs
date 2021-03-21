@@ -1,19 +1,22 @@
 <%- include('./partials/head.ejs') %>
 
-<h1>Enquete</h1>
-<h2>Minor Web Development</h2>
-
+<section class="home1">
+<section class="homeHeader">
+<h1>Minor Web Development</h1>
+<h2>Enquete</h2>
+</section>
 <form action="/overview" method="post" class="home" >
 
-    <label for="name">voornaam</label>
-    <input type="text" name="user_name" id="name" required>
 
-    <label for="name">achternaam</label>
-    <input type="text" name="user_surname" id="name" required>
+    <input type="text" name="user_name" id="name" required placeholder="Voornaam">
 
 
-    <label for="number">Studentnummer</label>
-    <input type="number" name="user_studentnr" id="number" required minlength="6" pattern="?[0-9]" >
+    <input type="text" name="user_surname" id="name" required placeholder="Achternaam">
+
+
+  
+    <input type="number" name="user_studentnr" id="number" required minlength="6" pattern="?[0-9]" placeholder="Studentnummer">
 
     <input type="submit" value="Submit">
 </form>
+</section>

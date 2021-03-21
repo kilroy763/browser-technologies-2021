@@ -20,17 +20,86 @@ form {
     display: block;
     margin: 0 auto;
     text-align: center;
-    width: 50%;
-    background-color: grey;
-    border-radius: 10px;
+    background-color: white;
     padding: 2em;
+
+}
+
+h1{
+    font-size: 1.5em;
 }
 
 input {
     display: block;
     margin: 0 auto;
-    color: black;
+    margin-top: 2.5em;
 }
+
+input[type=text], input[type=number]{
+    border: none;
+    border-bottom: 2px solid #5699d8;
+    color: #5699d8;
+  }
+
+input::placeholder{
+    color: #5699d8;
+}
+
+input:focus{
+    border: none;
+    border-bottom: 2px solid #28527a;
+    outline: none;
+    color: #28527a;
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+  }
+
+input:focus::placeholder{
+    color: #28527a;
+}
+
+  input[type=submit] {
+    margin-top: 2.5em;
+    border-radius: 10px;
+    border: 2px solid #5699d8;
+    padding: 1em;
+    background-color: white;
+    width: 33%;
+    color:#5699d8;
+  }
+
+  input[type=submit]:hover{
+      background-color: #28527a;
+      border: 2px solid #28527a;
+  }
+
+  input[type=submit]:focus{
+    background-color: #28527a;
+    border: 2px solid #28527a;
+}
+
+.overviewbutton{
+    margin-top: 5em !important; 
+}
+
+  .home1{
+      max-width: 350px;
+      margin: 0 auto;
+      background-color: #5699d8;
+      box-shadow: 10px 10px 50px 16px rgba(0,0,0,0.75);
+      margin-top: 10em;
+  }
+  
+
 
 label {
     margin-top: 2em;
@@ -52,25 +121,23 @@ a{
 }
 
 section > a > section {
-    background-color: rgb(135, 206, 250, 0.7);
+    background-color: #5699d8;
+    box-shadow: 10px 10px 50px 16px rgba(0,0,0,0.75);
     height: 100px;
     width: 250px;
     margin: 0 auto;
-    border-radius: 20px;
+    outline: none;  
 }
 
 section > a > section:hover {
-    background-color: rgb(135, 206, 250);
+    background-color: #28527a;
 }
 
-.home > input:nth-child(-n+4){
-    border-radius: 10px;
-    color: black;
+section > a > section:focus {
+    background-color: #28527a;
+    
 }
 
-.home > input:nth-child(-n+4):hover:focus{
-    background: lightgrey;
-}
 
 .enquete {
     display: flex;
@@ -78,7 +145,7 @@ section > a > section:hover {
     flex-wrap: wrap;
     justify-content: space-evenly;
     text-align: center;
-    gap: 5em;
+    gap: 3em;
 }
 
 a > section > h1 {
@@ -88,4 +155,29 @@ a > section > h1 {
 button {
     margin-top: 5em;
     margin-bottom: 5em ;
+}
+
+.header{
+    max-width: 350px;
+    background-color: #5699d8;
+    margin: 0 auto;
+    height: 150px;
+}
+
+footer{
+    height: 50px;
+    background-color: #5699d8;
+    margin-top: 5em;
+}
+
+.enqueteSectie{
+    background-color: #5699d8;
+    color: white;
+    max-width: 500px;
+    box-shadow: 10px 10px 50px 16px rgba(0,0,0,0.75);
+    margin: 0 auto;
+}
+
+form > p, form > label {
+    color: #5699d8;
 }
