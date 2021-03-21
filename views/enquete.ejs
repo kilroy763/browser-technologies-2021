@@ -1,0 +1,71 @@
+<%- include('./partials/head.ejs') %>
+
+<h1>Enquete</h1>
+<h2>Het vak</h2>
+
+<h3>Tijdlijn</h3>
+<a href="/overview"><i class="fas fa-backspace"></i></a>
+
+
+<form action="/overview">
+
+    <p>Van welke docent kreeg je les</p>
+    <input type="radio" name="docent" id="DocentA" value="DocentA">
+    <label for="docentA">Joost</label>
+    <input type="radio" name="docent" id="DocentB" value="DocentB">
+    <label for="DocentB">Suus</label>
+
+
+        <p>Lesstof</p>
+        <p>Hoe moeilijk vond je de lesstof?</p>
+
+    <select id="lesstof" name="lesstof" required>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+    </select>
+
+
+        <p>Uitleg</p>
+        <p>Hoe duidelijk is alles uitgelegd?</p>
+
+    <select id="uitleg" name="uitleg" required>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+    </select>
+
+
+        <p>Eigen inzicht</p>
+        <p>Hoe goed begreep je het?</p>
+
+    <select id="inzicht" name="inzicht" required>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+    </select>
+
+    <input type="submit" value="Submit">
+</form>
+

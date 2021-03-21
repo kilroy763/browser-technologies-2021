@@ -4,55 +4,31 @@
 <h1>Enquete</h1>
 <h2>Minor Web Development</h2>
 <h3><%- name %></h3>
-<h3>Studentnummer</h3>
 
-<a href="">
+<section class="enquete">
+    <h2>Nog te maken:</h2>
+
+    <% make.forEach(enq => { %>
+<a href="enq/<%= enq %>">
 <section>
-    <h1>Weekly Nerd</h1>
+    <h1><%= enq %></h1>
 </section>
 </a>
+<% }); %>
 
-<a href="">
-    <section>
-        <h1>Web App From Scratch</h1>
-    </section>
-</a>
 
-<a href="">
+<h2>Al afgerond:</h2>
+<% done.forEach(enq => { %>
+    <a href="enq/<%= enq %>">
     <section>
-        <h1>CSS To The Rescue</h1>
+        <h1><%= enq %></h1>
     </section>
-</a>
+    </a>
+    <% }); %>
+    
 
-<a href="">
-    <section>
-        <h1>Progressive Web App</h1>
-    </section>
-</a>
+   
 
-<a href="">
-    <section>
-        <h1>Browser Technologies</h1>
-    </section>
-</a>
-
-<a href="">
-    <section>
-        <h1>Real Time Web</h1>
-    </section>
-</a>
-
-<a href="">
-    <section>
-        <h1>Human Centred Design</h1>
-    </section>
-</a>
-
-<a href="/test">
-    <section>
-        <h1>Meesterproef</h1>
-    </section>
-</a>
 
 
 <button>Doorvoeren</button>

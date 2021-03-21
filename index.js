@@ -1,46 +1,103 @@
-// Require third-party modules
 const express = require('express');
 var path = require('path')
+var fs = require('fs')
+const ejs = require('ejs')
 const bodyParser = require('body-parser');
+const render = require('./modules/render.js')
 
 
-// Config object
 const port = 8000;
 
-// Create new express app in 'app'
 const app = express();
 
-// Link the templating engine to the express app
 app.set('view engine', 'ejs');
 
-// Tell the views engine/ejs where the template files are stored (Settingname, value)
 app.set('views', 'views');
 
-// Tell express to use a 'static' folder
-// If the url matches a file it will send that file
-// Sending something (responding) ends the response cycle
+
 app.use(express.static(path.join(__dirname, '/public')));
-app.use(bodyParser.urlencoded({ extended: true }));
 
-app.get('/', function(req, res) {
-    // Send a plain string using res.send();
-	res.render('home', {
-		pageTitle: `Node.js, Express & PWA`,
-        tagline: 'Basic implementation'
-	})
-});
+app.use(bodyParser.urlencoded({ extended: true}))
 
-app.get('/overview', function(req, res) {
-    console.log(req.body) //you will get your data in this as object.
+app.use(bodyParser.json())
 
-    res.render('overview', {
-        pageTitle: `Node.js, Express & PWA`,
-        tagline: 'Basic implementation',
-        name: req.body.name
-        
+app.use(express.json())
+
+app.post('/overview', render.overview)
+
+app.get('/enq/:enquete', render.enquete)
+
+app.get('/', redirect)
+
+app.get('/home', render.home)
+
+app.get('*', error)
+
+function redirect(req, res) {
+    res.redirect('/home');
+}
+
+function error(req, res) {
+    res.status(404).render('not-found', {
+        pageTitle: '404 Not Found'
     })
- 
-});
+}
+
+// app.get('/',  function(req, res) {
+
+// 	res.render('home', {
+// 		pageTitle: `Node.js, Express & PWA`,
+//         tagline: 'Basic implementation'
+// 	})
+// });
+
+// app.get('/enquete/wafs', function(req, res) {
+//     // Send a plain string using res.send();
+// 	res.render('enquete', {
+// 		pageTitle: `Node.js, Express & PWA`,
+//         tagline: 'Basic implementation'
+// 	})
+// });
+
+// app.get('/overview', function(req, res) {
+//     let newUser = {
+//         user_name: user.user_name,
+//         user_number: user.user_number,
+//         enq: []
+//     }
+//     res.render('overview', {
+//         pageTitle: `Node.js, Express & PWA`,
+//         name: user.user_name,
+//         number: user.user_number
+//     })
+// })
+
+// app.post('/overview', function(req, res) {
+//     console.log(req.body)
+//     let user = req.body
+
+//     if (data[user.user_number]) {
+//         console.log('hi')
+//     } else {
+//         let newUser = {
+//             user_name: user.user_name,
+//             user_number: user.user_number,
+//             enq: []
+//         }
+//         const noop = () => {}
+//         let json = JSON.stringify(newUser)
+//         fs.writeFileSync(test, json, "utf8", noop)
+//     }
+    
+//     res.render('overview', {
+//         title: 'Mijn enquêtes',
+//         pageTitle: `Node.js, Express & PWA`,
+//         name: user.user_name,
+//         number: user.user_number
+//     })
+// });
+
+
 
 // Actually set up the server
 app.listen(process.env.PORT || port, function() {

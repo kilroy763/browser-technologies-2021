@@ -3,13 +3,17 @@
 <h1>Enquete</h1>
 <h2>Minor Web Development</h2>
 
-<form action="overview" method="get">
+<form action="/overview" method="post" class="home" >
 
-    <label for="name">Naam</label>
-    <input type="text" name="name" id="name">
+    <label for="name">voornaam</label>
+    <input type="text" name="user_name" id="name" required>
+
+    <label for="name">achternaam</label>
+    <input type="text" name="user_surname" id="name" required>
+
 
     <label for="number">Studentnummer</label>
-    <input type="text" name="number" id="number">
+    <input type="number" name="user_studentnr" id="number" required minlength="6" pattern="?[0-9]" >
 
     <input type="submit" value="Submit">
 </form>

@@ -43,13 +43,49 @@ button {
     margin: 0 auto;
 }
 
+select{
+    color: black;
+}
+
 a{
     text-decoration: none;
 }
 
-section {
-    background-color: red;
+section > a > section {
+    background-color: rgb(135, 206, 250, 0.7);
     height: 100px;
-    width: 300px;
+    width: 250px;
     margin: 0 auto;
+    border-radius: 20px;
+}
+
+section > a > section:hover {
+    background-color: rgb(135, 206, 250);
+}
+
+.home > input:nth-child(-n+4){
+    border-radius: 10px;
+    color: black;
+}
+
+.home > input:nth-child(-n+4):hover:focus{
+    background: lightgrey;
+}
+
+.enquete {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-align: center;
+    gap: 5em;
+}
+
+a > section > h1 {
+    padding-top: 10%;
+}
+
+button {
+    margin-top: 5em;
+    margin-bottom: 5em ;
 }
