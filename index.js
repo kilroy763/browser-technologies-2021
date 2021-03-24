@@ -29,11 +29,12 @@ app.post('/:id/enq-redirect/:course', render.enqPost)
 
 app.get('/:id/overview', render.home)
 
-app.get('/:id/enq/:enquete', render.course)
+app.get('/:id/enq/:course', render.course)
 
 app.get('/', redirect)
 
 app.get('/home', render.login)
+
 
 app.get('*', error)
 

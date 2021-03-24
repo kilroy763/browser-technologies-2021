@@ -2,22 +2,22 @@ module.exports = function getData(param) {
     let data;
     if (param === 'PWA') {
         data = {
-            lecturer: ["Joost", "Declan"]
+            lecturer: ["Joost Faber", "Declan Rek"]
         };
         return data;
     } else if (param === 'Browser-Technologies') {
         data = {
-            lecturer: ["PPK", "Koop"]
+            lecturer: ["Peter-Paul koch", "Koop Reynders"]
         };
         return data;
     } else if (param === 'CSS-to-the-rescue') {
         data = {
-            lecturer: ["Docent_1", "Docent_2"]
+            lecturer: ["Sanne 't Hooft", "Vasilis van Gemert"]
         };
         return data;
     } else if (param === 'WAFS') {
         data = {
-            lecturer: ["Docent_1", "Docent_2", "Docent_3"]
+            lecturer: ["Joost Faber", "Suus"]
         };
         return data;
     } else if (param === 'Real-time-web') {

@@ -6,7 +6,7 @@
 <h3><%- name %></h3>
 </section>
 
-<h2>Nog te maken:</h2>
+<h2 class="line">Nog te maken:</h2>
 <section class="enquete">
     <% make.forEach(enq => { %>
 <a href="enq/<%= enq %>">
@@ -17,7 +17,7 @@
 <% }); %>
 </section>
 
-<h2>Al afgerond:</h2>
+<h2 class="line">Al afgerond:</h2>
 <section class="enquete">
 <% done.forEach(enq => { %>
     <a href="enq/<%= enq %>">
@@ -31,7 +31,9 @@
    
 
 
+<form action="/home" class="overviewform">
+    <input type="submit" value="Doorvoeren" class="overviewbutton"/>
+</form>
 
-<input type="Submit" value="Submit" class="overviewbutton">
 
 <%- include('./partials/footer.ejs') %>

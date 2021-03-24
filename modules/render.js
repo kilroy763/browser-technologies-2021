@@ -4,13 +4,16 @@ const dataScript = require('./dataScript.js');
 async function course(req, res) {
     let course = await courseData(req.params.course)
 
-    res.render('enquete', {
+    res.render('list', {
         pageTitle: 'Enquête' + req.params.course,
         course: req.params.course,
         data: course,
         id: req.params.id
+        
     })
 }
+
+
 
 function loginPost(req, res) {
     dataScript.pushUserData(req.body);
