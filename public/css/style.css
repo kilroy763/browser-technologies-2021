@@ -293,6 +293,11 @@ input.text,
 input[type="text"],
 input[type="button"],
 input[type="submit"],
+input[type="number"],
 .input-checkbox {
 -webkit-appearance: none;
+}
+
+input[type="text"], input[type="number"]{
+    font-size: 1em;
 }
