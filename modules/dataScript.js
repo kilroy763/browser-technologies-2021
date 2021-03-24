@@ -2,41 +2,60 @@ const fs = require('fs');
 let path = "./public/info.json";
 let data = JSON.parse(fs.readFileSync(path, "utf8"));
 
-function getUser(user) {
-    if (!data[user.user_studentnr]) data[user.user_studentnr] = {
-        user_name: user.user_name,
-        user_surname: user.user_surname,
-        user_studentnr: user.user_studentnr,
-        enq: []
-    }
+function pushUserData(user) {
+    if (!data[user.user_studentnr]) {
 
-    if (data[user.user_studentnr]) data[user.user_studentnr] = {
-        user_name: user.user_name,
-        user_surname: user.user_surname,
-        user_studentnr: user.user_studentnr,
-        enq: [{
-            "PWA": {
-                "test": "true"
-            }
-        }, {
-            "two": {
-                "test": "also true"
-            }
-        }]
+        data[user.user_studentnr] = {
+            user_name: user.user_name,
+            user_surname: user.user_surname,
+            user_studentnr: user.user_studentnr,
+            enq: []
+        }
+
+        fs.writeFile(path, JSON.stringify(data), (err) => {
+            if (err) console.error(err)
+        });
     }
+}
+
+function pushEnq(enq, user, course) {
+    let key = course
+
+    data[user].enq.push({
+        [key]: {
+            lecturer: enq.lecturer,
+            material: enq.material,
+            content: enq.content,
+            learning: enq.learning,
+            comments: enq.comments
+        }
+    })
 
     fs.writeFile(path, JSON.stringify(data), (err) => {
         if (err) console.error(err)
     });
+}
 
-    let userData = data[user.user_studentnr];
+/*
+{
+  lecturer: 'Koop',
+  material: 'medium',
+  content: 'medium',
+  learning: 'good',
+  comments: ''
+}
+*/
+
+function getUserData(user) {
+    let userData = data[user];
 
     return userData;
 }
 
 function getEnq(user) {
-    let courses = ["Weekly Nerd", "Progressive Web App", "Browser-Technologies", "Web App From Scratch", "CSS To The Resque", "Real Time Web", "Human Centred Design", "Meesterproef"]
-    let userData = data[user.user_studentnr].enq
+    let courses = ["PWA", "Browser-Technologies", "WAFS", "CSS-to-the-rescue", "Real-time-web", "HCD", "Meesterproef"]
+    // console.log(data[user].enq)
+    let userData = data[user].enq
     let doneEnq = [];
 
     for (let i = 0; i < userData.length; i++) {
@@ -56,7 +75,7 @@ function getEnq(user) {
 }
 
 function doneEnq(user) {
-    let userData = data[user.user_studentnr].enq
+    let userData = data[user].enq
     let doneEnq = [];
 
     for (let i = 0; i < userData.length; i++) {
@@ -68,7 +87,9 @@ function doneEnq(user) {
 }
 
 module.exports = {
-    getUser,
+    pushUserData,
+    pushEnq,
+    getUserData,
     getEnq,
     doneEnq
 }

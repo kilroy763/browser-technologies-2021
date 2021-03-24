@@ -23,13 +23,17 @@ app.use(bodyParser.json())
 
 app.use(express.json())
 
-app.post('/overview', render.overview)
+app.post('/login-redirect', render.loginPost)
 
-app.get('/enq/:enquete', render.enquete)
+app.post('/:id/enq-redirect/:course', render.enqPost)
+
+app.get('/:id/overview', render.home)
+
+app.get('/:id/enq/:enquete', render.course)
 
 app.get('/', redirect)
 
-app.get('/home', render.home)
+app.get('/home', render.login)
 
 app.get('*', error)
 
@@ -43,59 +47,6 @@ function error(req, res) {
     })
 }
 
-// app.get('/',  function(req, res) {
-
-// 	res.render('home', {
-// 		pageTitle: `Node.js, Express & PWA`,
-//         tagline: 'Basic implementation'
-// 	})
-// });
-
-// app.get('/enquete/wafs', function(req, res) {
-//     // Send a plain string using res.send();
-// 	res.render('enquete', {
-// 		pageTitle: `Node.js, Express & PWA`,
-//         tagline: 'Basic implementation'
-// 	})
-// });
-
-// app.get('/overview', function(req, res) {
-//     let newUser = {
-//         user_name: user.user_name,
-//         user_number: user.user_number,
-//         enq: []
-//     }
-//     res.render('overview', {
-//         pageTitle: `Node.js, Express & PWA`,
-//         name: user.user_name,
-//         number: user.user_number
-//     })
-// })
-
-// app.post('/overview', function(req, res) {
-//     console.log(req.body)
-//     let user = req.body
-
-//     if (data[user.user_number]) {
-//         console.log('hi')
-//     } else {
-//         let newUser = {
-//             user_name: user.user_name,
-//             user_number: user.user_number,
-//             enq: []
-//         }
-//         const noop = () => {}
-//         let json = JSON.stringify(newUser)
-//         fs.writeFileSync(test, json, "utf8", noop)
-//     }
-    
-//     res.render('overview', {
-//         title: 'Mijn enquêtes',
-//         pageTitle: `Node.js, Express & PWA`,
-//         name: user.user_name,
-//         number: user.user_number
-//     })
-// });
 
 
 
