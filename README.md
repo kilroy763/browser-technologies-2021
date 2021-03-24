@@ -51,5 +51,20 @@ Hier is de daadwerkelijke enquete te zien die de student moet invullen.
 - Validatie: alles moet zijn ingevuld voordat je verder mag met het formulier. Geef duidelijke foutmeldingen.
 - Als ik de enquete niet afkrijg, wil ik later weer verder gaan met waar ik ben gebleven.
 
+### Core functionaliteit
+De gebruiker moet een enquete kunnen invullen over de minor web development. Krijgt die hem niet af? Dan kan hij later verder gaan.
+
+### Link demo:
+https://btmaxmulder.herokuapp.com/
+
+### Browsers die ik ga testen
+* Google Chrome
+* Android Chrome
+* Safari
+* Iphone Safari
+* Firefox
+
+### Twee enhancements
+
 #### Dag 1 (Woensdag 17-03)
 De eerste dag heb ik in de ochtend wat schetsen gemaakt. Hierdoor had ik direct een idee met wat ik ging maken. Hierna heb ik een NodeJS / Express omgeving opgezet, basis HTML toegevoegd en gekeken naar de forms. Ik wilde namenlijk met de formulieren het zo maken dat de data wordt opgeslagen in een JSON bestand. Dit was alleen nog niet gelukt
