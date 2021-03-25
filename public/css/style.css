@@ -59,7 +59,7 @@ input[type=text], input[type=number]{
 
   .docenten {
     display: inline-block;
-    width: 25%;
+    width: 40%;
   }
 
   .docenten > label {
@@ -181,11 +181,10 @@ section > a > section:focus {
     flex-wrap: wrap;
     justify-content: space-evenly;
     text-align: center;
+    gap: 3em;
 }
 
-.enquete > a > section{
-    margin: 2em;
-}
+
 
 a > section > h1 {
     padding-top: 10%;
@@ -301,3 +300,28 @@ input[type="number"],
 input[type="text"], input[type="number"]{
     font-size: 1em;
 }
+
+
+p{
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+label:focus-within{
+    color: green;
+}
+
+input[type="text"]:valid, input[type="number"]:valid{
+    border-bottom: 2px solid green;
+    color: green;
+}
+
+
+
+@supports (gap: 3em){ 
+    .enquete > a > section{
+        margin: 2em;
+    }
+};
+

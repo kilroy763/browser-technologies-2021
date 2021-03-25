@@ -5,7 +5,7 @@ async function course(req, res) {
     let course = await courseData(req.params.course)
 
     res.render('list', {
-        pageTitle: 'Enquête' + req.params.course,
+        pageTitle: 'Enquête ' + req.params.course,
         course: req.params.course,
         data: course,
         id: req.params.id
@@ -13,6 +13,20 @@ async function course(req, res) {
     })
 }
 
+
+async function review(req,res) {
+    let course = await courseData(req.params.course);
+    let userData = await dataScript.getDoneEnq(req.params.id, req.params.course);
+    console.log(userData)
+
+    res.render('done', {
+        pageTitle: 'Enquête ' + req.params.course,
+        course: req.params.course,
+        data: course,
+        userData: userData,
+        id: req.params.id
+    })
+}
 
 
 function loginPost(req, res) {
@@ -52,5 +66,6 @@ module.exports = {
     loginPost,
     enqPost,
     login,
+    review,
     home
 }

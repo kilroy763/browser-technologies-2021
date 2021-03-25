@@ -25,6 +25,8 @@ function pushEnq(enq, user, course) {
         [key]: {
             lecturer: enq.lecturer,
             material: enq.material,
+            period: enq.period,
+            grade: enq.grade,
             content: enq.content,
             learning: enq.learning,
             comments: enq.comments
@@ -36,15 +38,17 @@ function pushEnq(enq, user, course) {
     });
 }
 
-/*
-{
-  lecturer: 'Koop',
-  material: 'medium',
-  content: 'medium',
-  learning: 'good',
-  comments: ''
+function getDoneEnq(user, course) {
+    let array = data[user].enq;
+    let userData;
+    array.forEach(item => {
+        let key = Object.keys(item)[0];
+        if (key === course) {
+            userData = item[key];
+        }
+    })
+    return userData;
 }
-*/
 
 function getUserData(user) {
     let userData = data[user];
@@ -90,6 +94,7 @@ module.exports = {
     pushUserData,
     pushEnq,
     getUserData,
+    getDoneEnq,
     getEnq,
     doneEnq
 }

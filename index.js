@@ -31,6 +31,8 @@ app.get('/:id/overview', render.home)
 
 app.get('/:id/enq/:course', render.course)
 
+app.get('/:id/view/:course', render.review)
+
 app.get('/', redirect)
 
 app.get('/home', render.login)

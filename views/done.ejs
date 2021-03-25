@@ -1,5 +1,40 @@
 <%- include('./partials/head.ejs') %>
 
-<h1>Dankjewel voor het invullen!</h1>
+<header >
+    <h1>Ingevulde enquête <%= course %></h1>
+</header>
 
-<%- include('./partials/footer.ejs') %>
+<main>
+    <section>
+        <h2>Docent van <%= course %>:</h2>
+        <p><%= userData.lecturer %>.</p>
+    </section>
+    <section>
+        <h2>Periode van dit vak:</h2>
+        <p><%= userData.period %>.</p>
+    </section>
+    <section>
+        <h2>Gegeven cijfer voor dit vak:</h2>
+        <p><%= userData.grade %></p>
+    </section>
+    <section>
+        <h2>De lesstof is:</h2>
+        <p><%= userData.material %>.</p>
+    </section>
+    <section>
+        <h2>Hoe werdt alles uitgelegd?</h2>
+        <p><%= userData.content %>.</p>
+    </section>
+    <section>
+        <h2>Heb je veel geleerd van <%= course %>:</h2>
+        <p><%= userData.learning %>.</p>
+    </section>
+    <section>
+        <h2>Opmerkingen:</h2>
+        <p><%= userData.comments %>.</p>
+    </section>
+
+    
+</main>
+
+<%- include ('./partials/footer.ejs') %>

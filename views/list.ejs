@@ -7,10 +7,10 @@
 <main>
   <form action="/<%= id %>/enq-redirect/<%= course %>" method="post">
       <fieldset>
-          <legend>Docenten <%= course %></legend>
+          <legend>Welke docent had jij voor <%= course%>?</legend>
           <% data.lecturer.forEach(lecturer => { %>
             <label for="<%= lecturer %>" class="docenten">
-          <input type="radio" id="<%= lecturer %>" name="lecturer" value="<%= lecturer %>" name="lecturer" required>
+          <input type="radio" id="<%= lecturer %>" name="lecturer" value="<%= lecturer %>" required>
           <%= lecturer %></label>
           <% }); %>
       </fieldset>
@@ -18,21 +18,21 @@
       <fieldset id="een">
           <legend>In welke week werd <%= course %> beoordeeld?</legend>
           <label for="1-4" class="weken">
-            <input type="radio" id="1-4"  name="week"  required>
+            <input type="radio" id="1-4"  name="period" value="Week 1 t/m 4"  required>
              Week 1 t/m 4</label>
 
-             <label for="4 - 8" class="weken">
-                <input type="radio" id="4 - 8"  name="week" required>
+             <label for="4-8" class="weken">
+                <input type="radio" id="4-8"  name="period" value="Week 4 t/m 8" required>
                  Week 4 t/m 8  </label>
 
                  
                  <label for="8-12" class="weken">
-                    <input type="radio" id="8-12"  name="week" required>
+                    <input type="radio" id="8-12"  name="period" value="Week 8 t/m 12" required>
                      Week 8 t/m 12 </label>
 
                      
                      <label for="12-20" class="weken">
-                        <input type="radio" id="12-20"  name="week" required>
+                        <input type="radio" id="12-20"  name="period" value="Week 12 t/m 20" required>
                          Week 12 t/m 20 </label>
 
                          
@@ -41,90 +41,90 @@
       </fieldset>
 
       <fieldset id="twee">
-          <legend>Geef <%= course %> een cijfer</legend>
+          <legend>Welk cijfer geef jij <%= course %>?</legend>
           <label class="grade">Mijn cijfer:</label>
 
           <label for="1" class="cijfer">
-          <input type="radio" id="1"  name="grade" required>
+          <input type="radio" id="1"  name="grade" value="1" required>
            1 </label>
 
            <label for="2" class="cijfer">
-          <input type="radio" id="2"  name="grade">
+          <input type="radio" id="2"  name="grade" value="2">
           2 </label>
 
           <label for="3" class="cijfer">
-          <input type="radio" id="3"  name="grade">
+          <input type="radio" id="3"  name="grade" value="3">
           3 </label>
 
           <label for="4" class="cijfer"> 
-          <input type="radio" id="4" name="grade">
+          <input type="radio" id="4" name="grade" value="4">
          4 </label>
 
          <label for="5" class="cijfer"> 
-          <input type="radio" id="5"  name="grade">
+          <input type="radio" id="5"  name="grade" value="5">
           5 </label>
 
           <label for="6" class="cijfer"> 
-          <input type="radio" id="6" name="grade">
+          <input type="radio" id="6" name="grade" value="6">
          6 </label>
 
-         <label for="7" class="cijfer">
-          <input type="radio" id="7" name="grade">
+         <label for="7" class="cijfer"> 
+          <input type="radio" id="7" name="grade" value="7">
          7 </label>
 
          <label for="8" class="cijfer">
-          <input type="radio" id="8"  name="grade">
+          <input type="radio" id="8"  name="grade" value="8">
           8 </label>
 
           <label for="9" class="cijfer">
-          <input type="radio" id="9" name="grade">
+          <input type="radio" id="9" name="grade" value="9">
           9 </label>
 
           <label for="10" class="cijfer">
-          <input type="radio" id="10" name="grade">
+          <input type="radio" id="10" name="grade" value="10">
           10 </label>
 
       </fieldset>
 
       <fieldset id="drie">
-          <legend>Hoe was de lesstof?</legend>
-          <input type="radio" id="material_good" name="material" value="good" required>
-          <label for="material_good">Boven verwachtingen</label>
-          <input type="radio" id="material_medium" name="material" value="medium">
-          <label for="material_medium">Zoals verwacht</label>
-          <input type="radio" id="material_bad" name="material" value="bad">
-          <label for="material_bad">Slechter als verwacht</label>
+          <legend>Hoe vond je de lesstof?</legend>
+          <input type="radio" id="material_good" name="material" value="Uitstekend" required>
+          <label for="material_good">Uitstekend</label>
+          <input type="radio" id="material_medium" name="material" value="Goed">
+          <label for="material_medium">Goed</label>
+          <input type="radio" id="material_bad" name="material" value="Matig">
+          <label for="material_bad">Matig</label>
       </fieldset>
 
       <fieldset id="vier">
-          <legend>Werd alles goed uitgelegd?</legend>
-          <input type="radio" id="content_good" name="content" value="good" required>
-          <label for="content_good">Alles werdt tot in hoog detail uitgelegd</label>
-          <input type="radio" id="content_medium" name="content" value="medium">
-          <label for="content_medium">Alles werd uitgelegd tot op redelijk niveau</label>
-          <input type="radio" id="content_bad" name="content" value="bad">
-          <label for="content_bad">Uitleg ging niet diep de stof in</label>
+          <legend>Hoe vond je dat alles uitgelegd werdt?</legend>
+          <input type="radio" id="content_good" name="content" value="uitstekend" required>
+          <label for="content_good">Uitstekend</label>
+          <input type="radio" id="content_medium" name="content" value="Goed">
+          <label for="content_medium">Goed</label>
+          <input type="radio" id="content_bad" name="content" value="Matig">
+          <label for="content_bad">Matig</label>
       </fieldset>
 
       <fieldset id="vijf">
-          <legend>Ik heb van dit vak veel geleerd</legend>
+          <legend>Heb jij van dit vak veel geleerd?</legend>
 
           <label for="learning_good" class="docenten">
-          <input type="radio" id="learning_good" name="learning" value="good" required>
+          <input type="radio" id="learning_good" name="learning" value="Ja" required>
        Ja</label>
 
        <label for="learning_bad" class="docenten">
-          <input type="radio" id="learning_bad" name="learning" value="bad">
+          <input type="radio" id="learning_bad" name="learning" value="Nee">
          Nee</label>
       </fieldset>
 
       <fieldset id="zes">
-          <legend>Opmerkingen</legend>
+          <legend>Eventuele opmerkingen</legend>
           <label for="comments"></label>
           <textarea name="comments" id="comments" cols="50" rows="5"></textarea>
       </fieldset>
 
-      <input type="submit"></input>
+      <input type="submit" id="submitEnquete"></input>
 
   </form>
 </main>
