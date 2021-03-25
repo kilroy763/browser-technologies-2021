@@ -50,7 +50,7 @@ input[type=text], input[type=number]{
 
 .cijfer {
       display: inline-block;
-      width: 7%;
+
   }
 
   .cijfer > label {
@@ -59,18 +59,28 @@ input[type=text], input[type=number]{
 
   .docenten {
     display: inline-block;
-    width: 40%;
+  }
+
+  .docenten:nth-child(3){
+      margin-left: 10%;
   }
 
   .docenten > label {
     display: inline-block;
 }
 
+textarea{
+    width: 100%;
+}
+
 
 .weken {
     display: inline-block;
-    width: 40%;
   }
+
+.weken:nth-child(odd){
+    margin-left: 10%;
+}
 
   .weken > label {
     display: inline-block;
@@ -89,10 +99,15 @@ input:focus{
 }
 
 
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+
+
+input[type=number] {
+    -moz-appearance:textfield;
 }
 
 input[type=number] {
@@ -317,7 +332,23 @@ input[type="text"]:valid, input[type="number"]:valid{
     color: green;
 }
 
+.done{
+    background-color: white;
+    box-shadow: 0px 0px 47px 11px rgba(0,0,0,1);
+    padding-bottom: 1em;
+    width: 95%;
+    max-width: 500px;
+    margin: 0 auto;
+}
 
+.done h1{
+    background-color: #5699d8;
+    height: 2em;
+}
+
+.done section h2, .done section p  {
+    color: #5699d8; 
+}
 
 @supports (gap: 3em){ 
     .enquete > a > section{
