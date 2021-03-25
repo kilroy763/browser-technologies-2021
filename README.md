@@ -73,6 +73,7 @@ De twee enhancements die ik gekozen heb zijn de volgende.
 Form Validatie. Ik ga het inlog formulier voor de student via form validatie checken of die goed is ongevuld. Met HTML kan je hem invullen, sla je elementen over dan wordt door de required tag toch aangetoont dat het niet goed is. Met CSS krijg je te zien dat hij goed is door de groene balk eronder en met JS krijg je een popup als die niet goed is ingevuld.
 
 Form in steps
+Het formulier heb ik ook ge enhancend. Ik heb het zo gemaakt dat hij in HTMl netjes in te vullen is, in CSS ook maar dan iets mooier eruit ziet en met JS wordt het in stapjes ingevuld. Met JS wordt er na elke ingevulde radio button een volgende vraag getoond
 
 
 #### Dag 1 (Woensdag 17-03)
