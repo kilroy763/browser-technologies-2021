@@ -76,6 +76,7 @@ textarea{
 
 .weken {
     display: inline-block;
+    width: 40%;
   }
 
 .weken:nth-child(odd){

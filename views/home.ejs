@@ -6,19 +6,19 @@
 <h2>Enquete</h2>
 </section>
 
-<form action="/login-redirect" method="post" class="home" >
+<form action="/login-redirect" method="post" class="home" name="login"    onsubmit="return inloggen()">
 
 
-    <input type="text" name="user_name" id="name" required placeholder="Voornaam">
+    <input type="text" name="user_name" id="name"  placeholder="Voornaam" required>
 
 
-    <input type="text" name="user_surname" id="name" required placeholder="Achternaam">
+    <input type="text" name="user_surname" id="name"  placeholder="Achternaam" required>
 
 
   
     <input type="number" name="user_studentnr" id="number"  min="6"   placeholder="Studentnummer" required>
 
-    <input type="submit" value="Submit">
+    <input type="submit">
 </form>
 </section>
 
