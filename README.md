@@ -58,13 +58,19 @@ De gebruiker moet een enquete kunnen invullen over de minor web development. Kri
 https://btmaxmulder.herokuapp.com/
 
 ### Browsers die ik ga testen
-* Google Chrome
-* Android Chrome
 * Safari
 * Iphone Safari
+* Google Chrome
+* Android Chrome
 * Firefox
+* Android Firefox
 
 ### Twee enhancements
+De twee enhancements die ik gekozen heb zijn de volgende. 
+Form Validatie. Ik ga het inlog formulier voor de student via form validatie checken of die goed is ongevuld. Met HTML kan je hem invullen, sla je elementen over dan wordt door de required tag toch aangetoont dat het niet goed is. Met CSS krijg je te zien dat hij goed is door de groene balk eronder en met JS krijg je een popup als die niet goed is ingevuld.
+
+Form in steps
+
 
 #### Dag 1 (Woensdag 17-03)
 De eerste dag heb ik in de ochtend wat schetsen gemaakt. Hierdoor had ik direct een idee met wat ik ging maken. Hierna heb ik een NodeJS / Express omgeving opgezet, basis HTML toegevoegd en gekeken naar de forms. Ik wilde namenlijk met de formulieren het zo maken dat de data wordt opgeslagen in een JSON bestand. Dit was alleen nog niet gelukt
