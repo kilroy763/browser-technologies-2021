@@ -5,10 +5,14 @@
 
 In het vak Browser Technologies gaan we onderzoeken wat Progressive Enhancement is en hoe je dit kan toepassen om goede, robuuste, toegankelijke websites te maken. Voor iedereen. Het web is voor iedereen, in dit vak leer je hoe je daarvoor kan zorgen.
 
-
-## Opdracht 1 🛹 NPM install Progressive- enhancement
+<details>
+<summary> ## Opdracht 1 🛹 NPM install Progressive- enhancement </summary>
+<br>
 Op de Woensdag heb ik samen met mijn clubje, c1 (Jordy, Lars, Guus en ik) gekeken naar progressive enhancement. We hebben naar een goed metafoor om PE uit te leggen, hiervoor hebben wij het bouwen van een huis gebruikt. Hierna hebben we aan de hand van illustraties van een gebouwd huis PE uitgelegd.
 De site is hier te zien: https://web-technologies.netlify.app/
+</details>
+
+
 
 ## Opdracht 2 💔 Breek het Web
 Op de donderdag ben ik aan de slag gegaan met het breken van het web. Ik heb 2 functies uitgekozen die ik zal onderzoeken en ga kijken wat er gebeurt als je de functies uit zet. De functies die ik gekozen heb zijn:
