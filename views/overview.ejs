@@ -1,38 +1,38 @@
 <%- include('./partials/head.ejs') %>
 
 <section class="header">
-<h1>Enquete</h1>
-<h2>Minor Web Development</h2>
-<h3><%- name %></h3>
+    <h1>Enquete</h1>
+    <h2>Minor Web Development</h2>
+    <h3><%- name %></h3>
 </section>
 
 <h2 class="line">Nog te maken:</h2>
 <section class="enquete">
     <% make.forEach(enq => { %>
-<a href="enq/<%= enq %>">
-<section>
-    <h1><%= enq %></h1>
-</section>
-</a>
-<% }); %>
-</section>
-
-<h2 class="line">Al afgerond:</h2>
-<section class="enquete">
-<% done.forEach(enq => { %>
-    <a href="view/<%= enq %>">
-    <section>
-        <h1><%= enq %></h1>
-    </section>
+    <a href="enq/<%= enq %>">
+        <section>
+            <h1><%= enq %></h1>
+        </section>
     </a>
     <% }); %>
 </section>
 
-   
+<h2 class="line">Al afgerond:</h2>
+<section class="enquete">
+    <% done.forEach(enq => { %>
+    <a href="view/<%= enq %>">
+        <section>
+            <h1><%= enq %></h1>
+        </section>
+    </a>
+    <% }); %>
+</section>
+
+
 
 
 <form action="/home" class="overviewform">
-    <input type="submit" value="Doorvoeren" class="overviewbutton"/>
+    <input type="submit" value="Doorvoeren" class="overviewbutton" />
 </form>
 
 

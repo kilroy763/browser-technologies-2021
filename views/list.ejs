@@ -1,139 +1,139 @@
 <%- include('./partials/head.ejs') %>
 
 <section class="enqueteSectie">
-<h1>Enquete</h1>
-<h2><%= course %></h2>
+    <h1>Enquete</h1>
+    <h2><%= course %></h2>
 
-<main>
-  <form action="/<%= id %>/enq-redirect/<%= course %>" method="post">
-      <fieldset>
-          <legend>Welke docent had jij voor <%= course%>?</legend>
-          <% data.lecturer.forEach(lecturer => { %>
-            <label for="<%= lecturer %>" class="docenten">
-          <input type="radio" id="<%= lecturer %>" name="lecturer" value="<%= lecturer %>" required>
-          <%= lecturer %></label>
-          <% }); %>
-      </fieldset>
+    <main>
+        <form action="/<%= id %>/enq-redirect/<%= course %>" method="post">
+            <fieldset>
+                <legend>Welke docent had jij voor <%= course%>?</legend>
+                <% data.lecturer.forEach(lecturer => { %>
+                <label for="<%= lecturer %>" class="docenten">
+                    <input type="radio" id="<%= lecturer %>" name="lecturer" value="<%= lecturer %>" required>
+                    <%= lecturer %></label>
+                <% }); %>
+            </fieldset>
 
-      <fieldset id="een">
-          <legend>In welke week werd <%= course %> beoordeeld?</legend>
-          <label for="1-4" class="weken">
-            <input type="radio" id="1-4"  name="period" value="Week 1 t/m 4"  required>
-             Week 1 tm 4</label>
+            <fieldset id="een">
+                <legend>In welke week werd <%= course %> beoordeeld?</legend>
+                <label for="1-4" class="weken">
+                    <input type="radio" id="1-4" name="period" value="Week 1 t/m 4" required>
+                    Week 1 tm 4</label>
 
-             <label for="4-8" class="weken">
-                <input type="radio" id="4-8"  name="period" value="Week 4 t/m 8" required>
-                 Week 4 tm 8  </label>
+                <label for="4-8" class="weken">
+                    <input type="radio" id="4-8" name="period" value="Week 4 t/m 8" required>
+                    Week 4 tm 8 </label>
 
-                 
-                 <label for="8-12" class="weken">
-                    <input type="radio" id="8-12"  name="period" value="Week 8 t/m 12" required>
-                     Week 8 tm 12 </label>
 
-                     
-                     <label for="12-20" class="weken">
-                        <input type="radio" id="12-20"  name="period" value="Week 12 t/m 20" required>
-                         Week 12 tm 20 </label>
+                <label for="8-12" class="weken">
+                    <input type="radio" id="8-12" name="period" value="Week 8 t/m 12" required>
+                    Week 8 tm 12 </label>
 
-                         
 
-  
-      </fieldset>
+                <label for="12-20" class="weken">
+                    <input type="radio" id="12-20" name="period" value="Week 12 t/m 20" required>
+                    Week 12 tm 20 </label>
 
-      <fieldset id="twee">
-          <legend>Welk cijfer geef jij <%= course %>?</legend>
-          <label class="grade">Mijn cijfer:</label>
 
-          <label for="1" class="cijfer">
-          <input type="radio" id="1"  name="grade" value="1" required>
-           1 </label>
 
-           <label for="2" class="cijfer">
-          <input type="radio" id="2"  name="grade" value="2">
-          2 </label>
 
-          <label for="3" class="cijfer">
-          <input type="radio" id="3"  name="grade" value="3">
-          3 </label>
+            </fieldset>
 
-          <label for="4" class="cijfer"> 
-          <input type="radio" id="4" name="grade" value="4">
-         4 </label>
+            <fieldset id="twee">
+                <legend>Welk cijfer geef jij <%= course %>?</legend>
+                <label class="grade">Mijn cijfer:</label>
 
-         <label for="5" class="cijfer"> 
-          <input type="radio" id="5"  name="grade" value="5">
-          5 </label>
+                <label for="1" class="cijfer">
+                    <input type="radio" id="1" name="grade" value="1" required>
+                    1 </label>
 
-          <label for="6" class="cijfer"> 
-          <input type="radio" id="6" name="grade" value="6">
-         6 </label>
+                <label for="2" class="cijfer">
+                    <input type="radio" id="2" name="grade" value="2">
+                    2 </label>
 
-         <label for="7" class="cijfer"> 
-          <input type="radio" id="7" name="grade" value="7">
-         7 </label>
+                <label for="3" class="cijfer">
+                    <input type="radio" id="3" name="grade" value="3">
+                    3 </label>
 
-         <label for="8" class="cijfer">
-          <input type="radio" id="8"  name="grade" value="8">
-          8 </label>
+                <label for="4" class="cijfer">
+                    <input type="radio" id="4" name="grade" value="4">
+                    4 </label>
 
-          <label for="9" class="cijfer">
-          <input type="radio" id="9" name="grade" value="9">
-          9 </label>
+                <label for="5" class="cijfer">
+                    <input type="radio" id="5" name="grade" value="5">
+                    5 </label>
 
-          <label for="10" class="cijfer">
-          <input type="radio" id="10" name="grade" value="10">
-          10 </label>
+                <label for="6" class="cijfer">
+                    <input type="radio" id="6" name="grade" value="6">
+                    6 </label>
 
-      </fieldset>
+                <label for="7" class="cijfer">
+                    <input type="radio" id="7" name="grade" value="7">
+                    7 </label>
 
-      <fieldset id="drie">
-          <legend>Hoe vond je de lesstof?</legend>
-          <label for="material_good">
-          <input type="radio" id="material_good" name="material" value="Uitstekend" required>
-         Uitstekend</label>
-         <label for="material_medium">
-          <input type="radio" id="material_medium" name="material" value="Goed">
-         Goed</label>
-         <label for="material_bad">
-          <input type="radio" id="material_bad" name="material" value="Matig">
-         Matig</label>
-      </fieldset>
+                <label for="8" class="cijfer">
+                    <input type="radio" id="8" name="grade" value="8">
+                    8 </label>
 
-      <fieldset id="vier">
-          <legend>Hoe vond je dat alles uitgelegd werdt?</legend>
-          <label for="content_good">
-          <input type="radio" id="content_good" name="content" value="uitstekend" required>
-       Uitstekend</label>
-       <label for="content_medium">
-          <input type="radio" id="content_medium" name="content" value="Goed">
-          Goed</label>
-          <label for="content_bad">
-          <input type="radio" id="content_bad" name="content" value="Matig">
-         Matig</label>
-      </fieldset>
+                <label for="9" class="cijfer">
+                    <input type="radio" id="9" name="grade" value="9">
+                    9 </label>
 
-      <fieldset id="vijf">
-          <legend>Heb jij van dit vak veel geleerd?</legend>
+                <label for="10" class="cijfer">
+                    <input type="radio" id="10" name="grade" value="10">
+                    10 </label>
 
-          <label for="learning_good" class="docenten">
-          <input type="radio" id="learning_good" name="learning" value="Ja" required>
-       Ja</label>
+            </fieldset>
 
-       <label for="learning_bad" class="docenten">
-          <input type="radio" id="learning_bad" name="learning" value="Nee">
-         Nee</label>
-      </fieldset>
+            <fieldset id="drie">
+                <legend>Hoe vond je de lesstof?</legend>
+                <label for="material_good">
+                    <input type="radio" id="material_good" name="material" value="Uitstekend" required>
+                    Uitstekend</label>
+                <label for="material_medium">
+                    <input type="radio" id="material_medium" name="material" value="Goed">
+                    Goed</label>
+                <label for="material_bad">
+                    <input type="radio" id="material_bad" name="material" value="Matig">
+                    Matig</label>
+            </fieldset>
 
-      <fieldset id="zes">
-          <legend>Eventuele opmerkingen</legend>
-          <label for="comments"></label>
-          <textarea name="comments" id="comments" cols="20" rows="5"></textarea>
-      </fieldset>
+            <fieldset id="vier">
+                <legend>Hoe vond je dat alles uitgelegd werdt?</legend>
+                <label for="content_good">
+                    <input type="radio" id="content_good" name="content" value="uitstekend" required>
+                    Uitstekend</label>
+                <label for="content_medium">
+                    <input type="radio" id="content_medium" name="content" value="Goed">
+                    Goed</label>
+                <label for="content_bad">
+                    <input type="radio" id="content_bad" name="content" value="Matig">
+                    Matig</label>
+            </fieldset>
 
-      <input type="submit" id="submitEnquete"></input>
+            <fieldset id="vijf">
+                <legend>Heb jij van dit vak veel geleerd?</legend>
 
-  </form>
-</main>
+                <label for="learning_good" class="docenten">
+                    <input type="radio" id="learning_good" name="learning" value="Ja" required>
+                    Ja</label>
+
+                <label for="learning_bad" class="docenten">
+                    <input type="radio" id="learning_bad" name="learning" value="Nee">
+                    Nee</label>
+            </fieldset>
+
+            <fieldset id="zes">
+                <legend>Eventuele opmerkingen</legend>
+                <label for="comments"></label>
+                <textarea name="comments" id="comments" cols="20" rows="5"></textarea>
+            </fieldset>
+
+            <input type="submit" id="submitEnquete"></input>
+
+        </form>
+    </main>
 </section>
 
 <%- include('./partials/footer.ejs') %>

@@ -1,6 +1,6 @@
 * {
     font-family: 'Oswald', sans-serif;
-    color: white;
+    color: 	white;
 }
 
 body {
@@ -122,16 +122,16 @@ input:focus::placeholder{
   input[type=submit] {
     margin-top: 2.5em;
     border-radius: 10px;
-    border: 2px solid #5699d8;
+    border: none;
     padding: 1em;
-    background-color: white;
+    background-color: #5699d8;
     width: 33%;
-    color:#5699d8;
+    color:black;
   }
 
   input[type=submit]:hover{
       background-color: #28527a;
-      border: 2px solid #28527a;
+      color: white;
   }
 
   input[type=submit]:focus{
@@ -225,6 +225,8 @@ footer{
     margin-top: 5em;
     width: 100vw;
     margin-left: -10vw;
+    margin-top: 30%;
+
 }
 
 .enqueteSectie{
@@ -236,7 +238,7 @@ footer{
 }
 
 fieldset > p, fieldset > label, legend {
-    color: #5699d8;
+    color: black;
 }
 
 legend {
