@@ -335,8 +335,11 @@ label:focus-within{
 }
 
 input[type="text"]:valid, input[type="number"]:valid{
-
     color: green;
+}
+
+input[type="text"]:invalid, input[type="number"]:invalid{
+    color: red;
 }
 
 .done{

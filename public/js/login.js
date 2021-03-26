@@ -8,6 +8,8 @@ window.onload = function removeRequired(){
 
 }
 
+
+
 function inloggen() {
     var name = document.forms["login"]["user_name"];
     var surname = document.forms["login"]["user_surname"];
