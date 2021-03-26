@@ -14,7 +14,7 @@ body {
     background-color: white;
 }
 
-h1, h2, h3{
+h1, h2, h3, h4, h5{
     text-align: center;
 }
 
@@ -220,14 +220,15 @@ button {
 }
 
 footer{
-    height: 50px;
+    height: 150px;
     background-color: #5699d8;
     margin-top: 5em;
     width: 100vw;
     margin-left: -10vw;
     margin-top: 30%;
-
 }
+
+
 
 .enqueteSectie{
     background-color: #5699d8;
