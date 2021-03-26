@@ -326,13 +326,16 @@ p{
     text-align: center;
 }
 
+span{
+    color: red;
+}
 
 label:focus-within{
     color: green;
 }
 
 input[type="text"]:valid, input[type="number"]:valid{
-    border-bottom: 2px solid green;
+
     color: green;
 }
 

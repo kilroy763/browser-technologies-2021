@@ -13,22 +13,24 @@ function inloggen() {
     var surname = document.forms["login"]["user_surname"];
     var nummer = document.forms["login"]["user_studentnr"];
 
+    const nameError = document.querySelector('span.error');
+    const surnameError = document.querySelector('span.error2');
+    const nummerError = document.querySelector('span.error3')
 
     if (name.value == "") {
-        window.alert("Voer AUB je naam in");
+        nameError.textContent = 'Voer je naam in';
         name.focus();
         return false;
     }
 
     if (surname.value == "") {
-        window.alert("Voor AUB je achternaam in");
+        surnameError.textContent = "Voer je achternaam in";
         surname.focus();
         return false;
     }
 
     if (nummer.value == "") {
-        window.alert(
-          "Voer AUB je studentennummer in");
+        nummerError.textContent = "Voer je studentnummer in"
         nummer.focus();
         return false;
     }
