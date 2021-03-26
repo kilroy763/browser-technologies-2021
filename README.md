@@ -80,15 +80,15 @@ Het formulier heb ik ook ge enhancend. Ik heb het zo gemaakt dat hij in HTMl net
 
 ### index pagina
 Hier komt de gebruiker op binnen, hier krijgt de student een formulier te zien waar hij/zij zijn studentnummer en naam moet invoeren.
-![Schets 1](https://github.com/kilroy763/browser-technologies-2021/blob/master/docs/img/schets1.jpg?raw=true)
+![Schets 1](https://github.com/kilroy763/browser-technologies-2021/blob/master/docs/img/loginschets.jpg?raw=true)
 
 ### Overzichtspagina 
 Hier ziet de student alle vakken van de minor, de student moet alle vakken langs om de enquete in te vullen. Tot slot kan hij op de submit knop drukken.
-![Schets 2](https://github.com/kilroy763/browser-technologies-2021/blob/master/docs/img/schets2.jpg?raw=true)
+![Schets 2](https://github.com/kilroy763/browser-technologies-2021/blob/master/docs/img/overviewschets.jpg?raw=true)
 
 ### Detailpagina
 Hier is de daadwerkelijke enquete te zien die de student moet invullen.
-![Schets 3](https://github.com/kilroy763/browser-technologies-2021/blob/master/docs/img/schets3.jpg?raw=true)
+![Schets 3](https://github.com/kilroy763/browser-technologies-2021/blob/master/docs/img/enqueteschets.jpg?raw=true)
 
 
 
