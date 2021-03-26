@@ -24,23 +24,22 @@ De uitwerking hiervan is [hier](https://github.com/kilroy763/browser-technologie
 ## De eindopdracht ✨ Progressive Enhanced Browser Technologie
 Voor de eindopdracht heb ik gekozen om een enquete over de minor Web Development te maken. Hiervoor heb ik eerst wat schetsen gemaakt zodat ik een idee had voor wat ik ging bouwen, ook heb ik de functional/reliable, usable en pleasurable laag bepaald.
 
-### Use case, Enquete over de minor Web Development
-> Ik wil een enquête kunnen invullen over de minor Web Development, met verschillende antwoordmogelijkheden. Als ik de enquête niet afkrijg, wil ik later weer verder gaan met waar ik ben gebleven.
+### Link demo:
+https://btmaxmulder.herokuapp.com/
 
-#### Vereisten voor de Enquete
+### Wireflow
+Ik heb een wireflow voor de pagina gemaakt zodat ik vooraf goed voor mij had wat ik ging bouwen. Hierdoor was ik ook niet onnodig veel tijd kwijt voor het ontwerp.  
+#### index pagina
+Hier komt de gebruiker op binnen, hier krijgt de student een formulier te zien waar hij/zij zijn studentnummer en naam moet invoeren.
+![Schets 1](https://github.com/kilroy763/browser-technologies-2021/blob/master/docs/img/loginschets.jpg?raw=true)
 
-- Studentgegevens (naam + nummer) verplicht
-- Per vak 
-	- naam
-	- docent(en)
-	- weken waarin je het vak deed
-	- beoordeling op schaal 1-10 van
-	- lesstof (hoe moeilijk is het)
-	- uitleg (hoe duidelijk is het uitgelegd)
-	- eigen inzicht (hoe goed snap je het)
-	
-- Validatie: alles moet zijn ingevuld voordat je verder mag met het formulier. Geef duidelijke foutmeldingen.
-- Als ik de enquete niet afkrijg, wil ik later weer verder gaan met waar ik ben gebleven.
+#### Overzichtspagina 
+Hier ziet de student alle vakken van de minor, de student moet alle vakken langs om de enquete in te vullen. Tot slot kan hij op de submit knop drukken.
+![Schets 2](https://github.com/kilroy763/browser-technologies-2021/blob/master/docs/img/overviewschets.jpg?raw=true)
+
+#### Detailpagina
+Hier is de daadwerkelijke enquete te zien die de student moet invullen.
+![Schets 3](https://github.com/kilroy763/browser-technologies-2021/blob/master/docs/img/enqueteschets.jpg?raw=true)
 
 ### Core functionaliteit
 De gebruiker moet een enquete kunnen invullen over de minor web development. Krijgt die hem niet af? Dan kan hij later verder gaan.
@@ -56,18 +55,6 @@ De usable laag is iets mooier, nu krijgen alle HTML elementen styles. Het werkt 
 #### Pleasurable
 De pleasurable laag bevat elementen die leuk zijn maar niet direct nodig. Zo heb ik form validatie toegevoegd die het formulier checkt of die goed is ingevuld, is die dat niet? Dan krijgt de gebruiker een popup. Ook heb ik de enquete in stappen opgedeeld. Zodra de gebruiker een radio button checked wordt de volgende vraag getoond. 
 
-
-### Link demo:
-https://btmaxmulder.herokuapp.com/
-
-### Browsers die ik ga testen
-* Safari
-* Iphone Safari
-* Google Chrome
-* Android Chrome
-* Firefox
-* Android Firefox
-
 ### Twee enhancements
 De twee enhancements die ik gekozen heb zijn de volgende. 
 
@@ -78,20 +65,21 @@ Ik ga het inlog formulier voor de student via form validatie checken of die goed
 Het formulier heb ik ook ge enhancend. Ik heb het zo gemaakt dat hij in HTMl netjes in te vullen is, in CSS ook maar dan iets mooier eruit ziet en met JS wordt het in stapjes ingevuld. Met JS wordt er na elke ingevulde radio button een volgende vraag getoond.
 
 
-### index pagina
-Hier komt de gebruiker op binnen, hier krijgt de student een formulier te zien waar hij/zij zijn studentnummer en naam moet invoeren.
-![Schets 1](https://github.com/kilroy763/browser-technologies-2021/blob/master/docs/img/schets1.jpg?raw=true)
+### Browsers die ik ga testen
+* Iphone Safari
+* Google Chrome
+* Android Chrome
+* Firefox
+* Android Firefox
 
-### Overzichtspagina 
-Hier ziet de student alle vakken van de minor, de student moet alle vakken langs om de enquete in te vullen. Tot slot kan hij op de submit knop drukken.
-![Schets 2](https://github.com/kilroy763/browser-technologies-2021/blob/master/docs/img/schets2.jpg?raw=true)
+##### Firefox
 
-### Detailpagina
-Hier is de daadwerkelijke enquete te zien die de student moet invullen.
-![Schets 3](https://github.com/kilroy763/browser-technologies-2021/blob/master/docs/img/schets3.jpg?raw=true)
+#### Google Chrome
 
+#### Iphone Safari
 
+#### Android Chrome
 
+#### Android Firefox
 
-#### Dag 1 (Woensdag 17-03)
-De eerste dag heb ik in de ochtend wat schetsen gemaakt. Hierdoor had ik direct een idee met wat ik ging maken. Hierna heb ik een NodeJS / Express omgeving opgezet, basis HTML toegevoegd en gekeken naar de forms. Ik wilde namenlijk met de formulieren het zo maken dat de data wordt opgeslagen in een JSON bestand. Dit was alleen nog niet gelukt
+### Test verslag
