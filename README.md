@@ -69,14 +69,15 @@ Het formulier heb ik ook ge enhancend. Ik heb het zo gemaakt dat hij in HTMl net
 
 
 ### Browsers die ik ga testen
-* Iphone Safari
-* Google Chrome
-* Android Chrome
 * Firefox
+* Google Chrome
+* Iphone Safari
+* Android Chrome
 * Android Firefox
 
 ##### Firefox
 Firefox werkte vrijwel direct goed. Ik had alleen een probleem met de submit buttons. Doordat ik geen value had meegegeven stond er "submit query". Dit heb ik verholpen door een value toe te voegen. Verders viel mij op dat op FireFox de kleuren veel veller zijn en eigenlijk ook mooier.
+![Kleur verschil](https://github.com/kilroy763/browser-technologies-2021/blob/master/docs/img/differenceChromeFirefox.png?raw=true)
 
 #### Google Chrome
 Google Chrome werkte perfect. Dit komt doordat ik hier in begonnen ben omdat dit mijn vaste browser is.
@@ -97,5 +98,6 @@ Android Chrome werkte nagenoeg direct ook perfect. Ik denk dat dit komt doordat 
 
 #### Android Firefox
 Android Firefox had hetzelfde probleem als Iphone Safari met Gap. Dit had ik dus op dezelfde manier verholpen. Verders had FireFox hetzelfde probleem op de telefoon als op de website met de query. Dit was ook verholpen door middel van een value toe te voegen.
+![Submit button](https://github.com/kilroy763/browser-technologies-2021/blob/master/docs/img/submit.jpg?raw=true)
 
 ### Test verslag
