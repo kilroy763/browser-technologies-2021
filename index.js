@@ -37,6 +37,7 @@ app.get('/', redirect)
 
 app.get('/home', render.login)
 
+app.get('/done', render.bye)
 
 app.get('*', error)
 

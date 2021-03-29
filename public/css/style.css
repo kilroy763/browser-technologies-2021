@@ -200,6 +200,14 @@ section > a > section:focus {
     gap: 3em;
 }
 
+.enquete2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-align: center;
+    gap: 3em;
+}
 
 
 a > section > h1 {
@@ -215,8 +223,26 @@ button {
     max-width: 350px;
     background-color: #5699d8;
     margin: 0 auto;
-    height: 150px;
+    height: 200px;
     box-shadow: 0px 0px 47px 11px rgba(0,0,0,1);
+}
+
+.header a{
+    display: block;
+    margin: 0 auto;
+    background-color: white;
+    color: #5699d8;
+    height: 50px;
+    text-align: center;
+}
+
+.header a:hover{
+    display: block;
+    margin: 0 auto;
+    background-color: #28527a;
+    color: white;
+    height: 50px;
+    text-align: center;
 }
 
 footer{
@@ -269,7 +295,7 @@ fieldset {
 }
 
 
-.enquete:last-of-type > a > section {
+.enquete2 > a > section {
     background-color: #9ede73;
     box-shadow: 0px 0px 47px 11px rgba(0,0,0,1);
 }
@@ -359,9 +385,25 @@ input[type="text"]:invalid, input[type="number"]:invalid{
 .done section h2, .done section p  {
     color: #5699d8; 
 }
+.bye{
+    background-color: #5699d8; 
+    padding: 1em;
+    max-width: 500px;
+    margin: 10em auto;
+
+}
+
+.bye a{
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+}
 
 @supports (gap: 3em){ 
     .enquete > a > section{
+        margin: 2em;
+    }
+    .enquete2 > a > section{
         margin: 2em;
     }
 };

@@ -4,6 +4,7 @@
     <h1>Enquete</h1>
     <h2>Minor Web Development</h2>
     <h3><%- name %></h3>
+    <a href="/home"> uitloggen</a>
 </section>
 
 <h2 class="line">Nog te maken:</h2>
@@ -18,7 +19,7 @@
 </section>
 
 <h2 class="line">Al afgerond:</h2>
-<section class="enquete">
+<section class="enquete2">
     <% done.forEach(enq => { %>
     <a href="view/<%= enq %>">
         <section>
@@ -31,9 +32,9 @@
 
 
 
-<form action="/home" class="overviewform">
+<form action="/done" class="overviewform">
     <input type="submit" value="Doorvoeren" class="overviewbutton" />
 </form>
 
-
+<script src="/js/disabled.js"></script>
 <%- include('./partials/footer.ejs') %>

@@ -2,10 +2,10 @@
 
 <section class="enqueteSectie">
     <h1>Enquete</h1>
-    <h2><%= course %></h2>
+    <h2 id="tagname"><%= course %></h2>
 
     <main>
-        <form action="/<%= id %>/enq-redirect/<%= course %>" method="post">
+        <form action="/<%= id %>/enq-redirect/<%= course %>" method="post" id="form">
             <fieldset>
                 <legend>Welke docent had jij voor <%= course%>?</legend>
                 <% data.lecturer.forEach(lecturer => { %>

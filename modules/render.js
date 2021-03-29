@@ -47,6 +47,12 @@ function login(req, res) {
     })
 }
 
+function bye(req, res){
+    res.render('bye',{
+        pageTitle: "Thank you!"
+    } )
+}
+
 async function home(req, res) {
     let user = req.params.id;
     const userData = await dataScript.getUserData(user)
@@ -67,5 +73,6 @@ module.exports = {
     enqPost,
     login,
     review,
-    home
+    home,
+    bye
 }
