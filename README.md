@@ -92,6 +92,7 @@ Op de Iphone werkte de website is eerste instantie niet perfect. Bij het overzic
 };
 ```
 Verders werkte het goed op de iphone. Mij viel op dat de knoppen zelf een disabled stijl toegepast krijgen zonder dat ik die heb gedefineerd in de CSS.
+![Button style](https://github.com/kilroy763/browser-technologies-2021/blob/master/docs/img/disabled.jpg?raw=true)
 
 #### Android Chrome
 Android Chrome werkte nagenoeg direct ook perfect. Ik denk dat dit komt doordat hij al op Google Chrome perfect werkte.
