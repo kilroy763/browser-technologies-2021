@@ -102,4 +102,4 @@ Android Firefox had hetzelfde probleem als Iphone Safari met Gap. Dit had ik dus
 ![Submit button](https://github.com/kilroy763/browser-technologies-2021/blob/master/docs/img/submit2.png?raw=true)
 
 ### Test verslag
-
+Ik heb gekeken op mijn website naar verschillende elementen. Zo heb ik gekeken naar color vision deficiencies. Bij elke mogelijke optie was mijn website nog goed te gebruiken. Verders heb ik ook naar mijn website gekeken met trage 3G. Dit werkt ook nog goed, doordat alle textvelden een blauwe achtergrond hebben zijn ze altijd te lezen ondanks de text wit is. De achtergrondafbeelding laat wel iets alter in doordat het van een externe bron komt. Alsnog werkt het naar behoren. Tot slot heb ik JavaScript in zijn geheel uitgezet. Op mijn website heb je dan geen form validation meer, dit wordt wel nog opgepakt door mijn HTML, door de required parameter. Ook door de css weet de gebruiker of hij/zij iets goeds invult. In mijn enquete formulier werkte de stappen niet meer, dit is opgepakt door HTML CSS doordat nu het hele formulier zichtbaar is. Tot slot werkt localstorage niet meer alleen hier is niks tegen te doen.
