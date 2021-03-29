@@ -1,5 +1,3 @@
-console.log("inloggen")
-
 
 window.onload = function removeRequired(){
     document.forms["login"]["user_name"].required = false;

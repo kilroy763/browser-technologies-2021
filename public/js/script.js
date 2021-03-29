@@ -1,37 +1,3 @@
-
-
-
-
-// -------------------------------------------------------------------------------------- pushes localstorage to enquete if there is any
-async function pushEnqData(id) {
-  if (localStorage.getItem(id)) {
-      let data = JSON.parse(localStorage.getItem(id));
-      let inputs = await getInputs();
-      let comments = document.querySelector("textarea");
-      for (let key of Object.keys(data)) {
-          if (key === 'comments') {
-              comments.innerHTML = data[key];
-          }
-  
-          inputs.forEach(input => {
-              if (input.value === data[key] && input.type == "radio") {
-                  document.getElementById("een").style.display = "block";
-                  document.getElementById("twee").style.display = "block";
-                  document.getElementById("drie").style.display = "block";
-                  document.getElementById("vier").style.display = "block";
-                  document.getElementById("vijf").style.display = "block";
-                  document.getElementById("zes").style.display = "block";
-                  input.checked = true;
-              } 
-          })
-  
-          
-      }
-  
-  }
-  }
-  
-  // -------------------------------------------------------------------------------------- stores enquete inputs to localstorage on input
   async function storeEnq(id) {
   let lecturer = await getLecturer();
   let period = await getPeriod();
@@ -51,11 +17,10 @@ async function pushEnqData(id) {
       comments: comments
   }
   
-  console.log(obj)
   localStorage.setItem(id, JSON.stringify(obj));
   }
   
-  // -------------------------------------------------------------------------------------- functions below get all inputs
+
   function getInputs() {
   let inputs = document.querySelectorAll("input");
   return inputs;
@@ -115,7 +80,36 @@ async function pushEnqData(id) {
   }
   }
   
-  // ===
+  async function pushEnqData(id) {
+    if (localStorage.getItem(id)) {
+        let data = JSON.parse(localStorage.getItem(id));
+        let inputs = await getInputs();
+        let comments = document.querySelector("textarea");
+        for (let key of Object.keys(data)) {
+            if (key === 'comments') {
+                comments.innerHTML = data[key];
+            }
+    
+            inputs.forEach(input => {
+                if (input.value === data[key] && input.type == "radio") {
+                    document.getElementById("een").style.display = "block";
+                    document.getElementById("twee").style.display = "block";
+                    document.getElementById("drie").style.display = "block";
+                    document.getElementById("vier").style.display = "block";
+                    document.getElementById("vijf").style.display = "block";
+                    document.getElementById("zes").style.display = "block";
+                    input.checked = true;
+                } 
+            })
+    
+            
+        }
+    
+    }
+    }
+    
+  
+
   let enqId = document.getElementById('tagname')
   let enq = document.getElementById('form')
   
@@ -208,6 +202,8 @@ function toggleCheckbox6() {
   document.getElementById("zes").style.display = "block";
   document.getElementById("submitEnquete").disabled = false;
 }
+
+
 
 
 

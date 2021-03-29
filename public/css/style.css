@@ -399,6 +399,11 @@ input[type="text"]:invalid, input[type="number"]:invalid{
     margin: 0 auto;
 }
 
+input[type=submit]:disabled{
+    background-color: #28527a;
+    color: black;
+}
+
 @supports (gap: 3em){ 
     .enquete > a > section{
         margin: 2em;

@@ -1,11 +1,11 @@
 module.exports = function getData(param) {
     let data;
-    if (param === 'PWA') {
+    if (param === 'Progressive Web App') {
         data = {
             lecturer: ["Joost Faber", "Declan Rek"]
         };
         return data;
-    } else if (param === 'Browser-Technologies') {
+    } else if (param === 'Browser Technologies') {
         data = {
             lecturer: ["Peter-Paul koch", "Koop Reynders"]
         };
@@ -15,19 +15,19 @@ module.exports = function getData(param) {
             lecturer: ["Sanne 't Hooft", "Vasilis van Gemert"]
         };
         return data;
-    } else if (param === 'WAFS') {
+    } else if (param === 'Web App From Scratch') {
         data = {
             lecturer: ["Joost Faber", "Suus"]
         };
         return data;
-    } else if (param === 'Real-time-web') {
+    } else if (param === 'Real Time Web') {
         data = {
-            lecturer: ["Docent_1", "Docent_2"]
+            lecturer: ["Justus", "Lukas"]
         };
         return data;
-    } else if (param === 'HCD') {
+    } else if (param === 'Human Centred Design') {
         data = {
-            lecturer: ["Docent_1", "Docent_2"]
+            lecturer: ["Vasilis van Gemert", "Koop Reynders"]
         };
         return data;
     } else if (param === 'Meesterproef') {
