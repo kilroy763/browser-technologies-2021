@@ -24,6 +24,9 @@ De uitwerking hiervan is [hier](https://github.com/kilroy763/browser-technologie
 ## De eindopdracht ✨ Progressive Enhanced Browser Technologie
 Voor de eindopdracht heb ik gekozen om een enquete over de minor Web Development te maken. Hiervoor heb ik eerst wat schetsen gemaakt zodat ik een idee had voor wat ik ging bouwen, ook heb ik de functional/reliable, usable en pleasurable laag bepaald.
 
+### Disclaminer
+Mijn project kan best wat overeen komen met die van Rick Groot. Ik heb de server side code (wat mocht volgens de docenten) gekopieerd van Rick. Doordat het formulier gekoppeld is aan de server kant van de server is die erbij gekomen. Verders is de website volledig op eigen basis gemaakt, inclusief het design. Rick heeft mij verders wel nog geholpen met het toepassen van localstorage.  [Bekijk hier Rick zijn Repository](https://github.com/RickGroot/browser-technologies-2021)
+
 ### Link demo:
 https://btmaxmulder.herokuapp.com/
 
@@ -73,13 +76,26 @@ Het formulier heb ik ook ge enhancend. Ik heb het zo gemaakt dat hij in HTMl net
 * Android Firefox
 
 ##### Firefox
+Firefox werkte vrijwel direct goed. Ik had alleen een probleem met de submit buttons. Doordat ik geen value had meegegeven stond er "submit query". Dit heb ik verholpen door een value toe te voegen. Verders viel mij op dat op FireFox de kleuren veel veller zijn en eigenlijk ook mooier.
 
 #### Google Chrome
+Google Chrome werkte perfect. Dit komt doordat ik hier in begonnen ben omdat dit mijn vaste browser is.
 
 #### Iphone Safari
+Op de Iphone werkte de website is eerste instantie niet perfect. Bij het overzichtspagina van de enquetes was geen margin tussen de blokken te zien. Bij nader inzien kwam dit doordat Gap niet ondersteunt wordt door Safari. Dit heb ik verholpen door de volgende code:
+```
+@supports (gap: 3em){ 
+    .enquete > a > section{
+        margin: 2em;
+    }
+};
+```
+Verders werkte het goed op de iphone. Mij viel op dat de knoppen zelf een disabled stijl toegepast krijgen zonder dat ik die heb gedefineerd in de CSS.
 
 #### Android Chrome
+Android Chrome werkte nagenoeg direct ook perfect. Ik denk dat dit komt doordat hij al op Google Chrome perfect werkte.
 
 #### Android Firefox
+Android Firefox had hetzelfde probleem als Iphone Safari met Gap. Dit had ik dus op dezelfde manier verholpen. Verders had FireFox hetzelfde probleem op de telefoon als op de website met de query. Dit was ook verholpen door middel van een value toe te voegen.
 
 ### Test verslag
