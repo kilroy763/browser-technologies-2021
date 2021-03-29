@@ -10,7 +10,7 @@ module.exports = function getData(param) {
             lecturer: ["Peter-Paul koch", "Koop Reynders"]
         };
         return data;
-    } else if (param === 'CSS-to-the-rescue') {
+    } else if (param === 'CSS To The Rescue') {
         data = {
             lecturer: ["Sanne 't Hooft", "Vasilis van Gemert"]
         };
