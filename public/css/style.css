@@ -379,7 +379,7 @@ input[type="text"]:invalid, input[type="number"]:invalid{
 
 .done h1{
     background-color: #5699d8;
-    height: 2em;
+    height: 4em;
 }
 
 .done section h2, .done section p  {
