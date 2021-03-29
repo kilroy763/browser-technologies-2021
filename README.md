@@ -98,6 +98,6 @@ Android Chrome werkte nagenoeg direct ook perfect. Ik denk dat dit komt doordat 
 
 #### Android Firefox
 Android Firefox had hetzelfde probleem als Iphone Safari met Gap. Dit had ik dus op dezelfde manier verholpen. Verders had FireFox hetzelfde probleem op de telefoon als op de website met de query. Dit was ook verholpen door middel van een value toe te voegen.
-![Submit button](https://github.com/kilroy763/browser-technologies-2021/blob/master/docs/img/submit.jpg?raw=true)
+![Submit button](https://github.com/kilroy763/browser-technologies-2021/blob/master/docs/img/submit2.png?raw=true)
 
 ### Test verslag
