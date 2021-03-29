@@ -95,11 +95,11 @@ Verders werkte het goed op de iphone. Mij viel op dat de knoppen zelf een disabl
 ![Button style](https://github.com/kilroy763/browser-technologies-2021/blob/master/docs/img/disabled.jpg?raw=true)
 
 #### Android Chrome
-Android Chrome werkte nagenoeg direct ook perfect. Ik denk dat dit komt doordat hij al op Google Chrome perfect werkte.
+Android Chrome werkte nagenoeg direct ook perfect. Ik denk dat dit komt doordat hij al op Google Chrome perfect werkte. Het enige wat mij op de Android telefoon opviel in vergelijking met de Iphone is dat zodra je op de input type[number] drukt, je op Android een specifiek cijfer toetsenbord krijgt. Op Iphone krijg je alleen het normale toetstenbord waar de cijfers wel direct bovenin staan. Dit vondt ik wel wat raar omdat ik weet dat Iphone ook een cijfer specifiek toetenbord heeft.
 
 #### Android Firefox
 Android Firefox had hetzelfde probleem als Iphone Safari met Gap. Dit had ik dus op dezelfde manier verholpen. Verders had FireFox hetzelfde probleem op de telefoon als op de website met de query. Dit was ook verholpen door middel van een value toe te voegen.
 ![Submit button](https://github.com/kilroy763/browser-technologies-2021/blob/master/docs/img/submit2.png?raw=true)
 
 ### Test verslag
-Coming soon
+
